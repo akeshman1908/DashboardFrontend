@@ -5,7 +5,7 @@ const App = () => {
 
   useEffect(() => {
     // This is where you make the API call to your backend
-    fetch('https://dashboardbackend-jych.onrender.com/api_endpoint') // replace with your specific API endpoint
+    fetch('https://dashboardbackend-jych.onrender.com/api/data') // replace with your specific API endpoint
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error('Error fetching data:', error));
